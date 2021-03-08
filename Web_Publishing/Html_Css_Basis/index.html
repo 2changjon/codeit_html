@@ -1,0 +1,89 @@
+<!---->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /**/
+
+      h1 {
+        text-align: left; /* 텍스트 정렬 */
+        color: lime; /* 글자 색 */
+        margin-bottom: 20px; /* 요소 사이의 여백 */
+        text-decoration: underline; /* 밑줄 */
+      }
+
+      .p1 {
+        background-color: red; /* 뒷 배경 색*/
+        line-height: normal;
+        text-decoration: overline; /* 윗줄 */
+      }
+
+      .big-blue-text { /* . 으로 클래스 이름이라는 걸 나타냄 */
+        color: rgb(83, 237, 65); /* 글자 색 RGB 값 */
+        text-decoration: none; /* default 값 텍스트 꾸밈을 없애기 위해 자주 사용 */
+      }
+
+      #favorite-text { /* # 으로 아이디라는 걸 나타냄 */
+        color: #53ED41; /* 글자 색 HEX 값 */
+        font-size: 48px; /* 글자 크기 */
+        text-decoration: line-through; /* 중간줄(취소줄) */
+      }
+      /* 같은 클래스 이름을 여러 요소가 가질 수 있지만, 같은 아이디를 여러 요소가 공유할 수는 없다. */
+      /* 한 요소가 여러 클래스를 가질 수 있지만, 한 요소는 하나의 아이디만 가질 수 있다. (단, 한 요소가 클래스도 여러 개 갖고 아이디도 하나 가질 수 있다) */
+
+      #p1 {
+        color: red;
+        text-align: left;
+        font-weight: 400;  /* font-weight: normal 동일 */
+      }
+
+      #p2 {
+        color: green;
+        text-align: right;
+        font-weight: 700; /* font-weight: bold 동일 */
+      }
+
+
+    </style>
+    <!--스타일 적용 방법은 총 3가지-->
+    <!-- 1. <style> tag 사용 -->
+    <!-- 2. 해당 태그에 style 사용 <h1 style="color: green; text-align: center;"> -->
+    <!-- 3. link tag 사용 <link href="css/styles.css" rel="stylesheet"> -->
+
+  </head>
+  <body>
+    Hello <b>World</b>! <!--텍스트를 굵게-->
+    Hello <i>World</i>! <!--텍스트를 날려 쓰기-->
+    Hello <strong>World</strong>! <!--강조 텍스트를 굵게-->
+    Hello <em>World</em>! <!--강조 텍스트를 날려 쓰기-->
+
+    <h1>Heading 1</h1><!--머리말-->
+
+    <img src="https://i.imgur.com/CDPKjZJ.jpg" width="100%"><!--이미지 길이를 퍼센트로 설정-->
+
+    <p class="big-blue-text">First</p>
+
+    <p id="p1">Hello World!</p>
+    <p id="p2">Hello World!</p>
+
+    <a href="https://fonts.google.com/">폰트 스타일 html 코드</a>
+    <!-- a 는 inline 속성이고 p는 block 속성 -->
+
+    <h4>line-height 이해</h4>
+
+    <img src="img/line-height.jpg">
+
+    <pre> 이 파란 줄 사이가 실제 내용이 들어가 있는 'content area'(콘텐츠 영역)이고 font-family와 font-size에 따라서 'content area'가 정해짐
+    line-height는 'content area'에 영향을 주지 않는다
+    line-height를 통해서는 각 줄이 실질적으로 차지하는 공간을 정해줄 수 있습니다.
+    예를 들어서 99px로 설정하면 'content area'보다 40px이 많기 때문에 위 아래로 20px의 공간이 추가로 생깁니다.
+    반대로 40px로 설정하면 'content area'보다 19px이 적기 때문에 위 아래로 -9.5px의 공간이 줄어듭니다. </pre>
+    <!-- <pre> tag 는 에디터에 입력된 텍스트 그대로 화면에 출력-->
+
+
+    <div>div tag는 block 공간</div>
+    <span>span tag는 inline 공간</span>
+  </body>
+</html>
